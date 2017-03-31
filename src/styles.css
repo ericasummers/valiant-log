@@ -18,6 +18,13 @@ img {
   font-size: 140%;
 }
 
+.descriptions {
+  padding: 10px;
+  background-color: rgba(166, 175, 218, 0.5);
+  border: solid 1px #D5DAF2;
+  color: #1D1D1E;
+}
+
 .highCalorie {
   font-weight: bold;
   font-size: 120%;
