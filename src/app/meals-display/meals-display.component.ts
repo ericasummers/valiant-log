@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meal } from '../meal.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MealService } from '../meal.service';
+import { Announcement } from '../announcement.model';
 
 @Component({
   selector: 'app-meals-display',
@@ -28,4 +29,10 @@ export class MealsDisplayComponent implements OnInit {
   onCrewChange(optionFromMenu) {
     this.filterByCrewMember = optionFromMenu;
   }
+
+  masterAnnouncementList: Announcement[] = [
+    new Announcement('Temporary shortage due to hydroponics lab equipment down', 'Dried green beans', '2017-05-05'),
+    new Announcement('Extra protein in pellets from latest batch', 'Pellets', '2020-08-09'),
+    new Announcement('Extremely low supply', 'Chocolate', '2018-07-06')
+  ];
 }
