@@ -20,11 +20,13 @@ img {
 
 .highCalorie {
   font-weight: bold;
+  font-size: 120%;
   color: yellow;
 }
 
 .lowCalorie {
   font-weight: bold;
+  font-size: 120%;
   color: red;
 }
 
@@ -35,8 +37,17 @@ img {
   margin: 12px;
 }
 
+.navbar-brand {
+  color: #488ACB;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
 .standardCalorie {
   font-weight: bold;
+  font-size: 120%;
   color: green;
 }
 
@@ -92,5 +103,11 @@ img {
 #ship-name {
   font-size: 140%;
   font-weight: bold;
-  color: #626493;
+  color: #A5A7CC;
+  text-decoration: none;
+}
+
+#ship-name:hover {
+  color: #294FFC;
+  text-decoration: none;
 }
