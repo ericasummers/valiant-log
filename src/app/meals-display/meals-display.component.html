@@ -1,5 +1,11 @@
 <br>
-<div *ngFor="let meal of meals | async">
+<select (change)="onChange($event.target.value)">
+  <option value="allMeals">All Rations</option>
+  <option value="highCalorie">High Calorie Rations</option>
+  <option value="lowCalorie">Low Calorie Rations</option>
+</select>
+
+<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>
   <p>{{meal.ration}}</p>
   <ul>

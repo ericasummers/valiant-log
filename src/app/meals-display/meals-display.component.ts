@@ -10,6 +10,7 @@ import { MealService } from '../meal.service';
   providers: [MealService]
 })
 export class MealsDisplayComponent implements OnInit {
+  filterByHighCalorie: string = "Calorie";
 
   constructor(private mealService: MealService) { }
 
@@ -18,4 +19,8 @@ export class MealsDisplayComponent implements OnInit {
   }
 
   meals: FirebaseListObservable<any[]>;
+
+  onChange(optionFromMenu) {
+    this.filterByHighCalorie = optionFromMenu;
+  }
 }
