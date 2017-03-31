@@ -1,5 +1,5 @@
 <div *ngFor="let meal of meals | async" class="meal-box">
-  <p><span class="crew-name">{{meal.crewMember}}</span> ate {{meal.ration}}</p>
+  <p><span class="crew-name" (click)="editForm.hidden =!editForm.hidden">{{meal.crewMember}}</span> ate {{meal.ration}}</p>
   <p>Details: {{meal.details}}</p>
   <p>Calories: {{meal.calories}}</p>
   <p>Date: {{meal.date}}</p>

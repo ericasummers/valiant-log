@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Meal } from '../../meal.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MealService } from '../../meal.service';
 import { Router } from '@angular/router';
