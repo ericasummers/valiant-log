@@ -1,0 +1,17 @@
+{
+  "name": "valiant-log",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Erica Wright <ericaw21@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
