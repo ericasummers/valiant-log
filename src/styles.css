@@ -1,5 +1,6 @@
-#content {
-  margin-top: 130px;
+body {
+  margin: 0;
+  padding: 0;
   background: url('/assets/spaceshipint.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,16 +9,40 @@
   height: 100%;
 }
 
+#all-content {
+  min-height: 100%;
+  position: relative;
+}
+
+#content {
+  margin-top: 130px;
+  color: #A5A7CC;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+#footer {
+  font-size: 60%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  height: 30px;
+  padding-top: 2px;
+}
+
 #header {
   background-color: #633A3D;
   color: white;
-  /*background: rgba(59, 34, 36, 0.7);*/
   top: 0;
   left: 0;
   width: 100%;
   position: fixed;
   display: block;
   height: 130px;
+  padding: 10px;
 }
 
 #ship-name {

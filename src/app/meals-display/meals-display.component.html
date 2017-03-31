@@ -19,7 +19,7 @@ Crew Member:
 </select>
 </h5>
 
-<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie | crewMember:filterByCrewMember">
+<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie | crewMember:filterByCrewMember" class="col-mg-5">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>
   <p>{{meal.ration}}</p>
   <ul>
