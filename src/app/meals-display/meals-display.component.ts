@@ -19,4 +19,8 @@ export class MealsDisplayComponent implements OnInit {
 
   meals: FirebaseListObservable<any[]>;
 
+  submitMeal(newMeal) {
+    this.mealService.addMeal(newMeal);
+    console.log(newMeal);
+  }
 }
