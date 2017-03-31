@@ -12,6 +12,7 @@ import { routing } from './app.routing';
 import { AddMealComponent } from './edit/add-meal/add-meal.component';
 import { EditComponent } from './edit/edit.component';
 import { EditMealComponent } from './edit/edit-meal/edit-meal.component';
+import { HighCaloriePipe } from './high-calorie.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     AboutComponent,
     AddMealComponent,
     EditMealComponent,
-    EditComponent
+    EditComponent,
+    HighCaloriePipe
   ],
   imports: [
     AlertModule.forRoot(),
