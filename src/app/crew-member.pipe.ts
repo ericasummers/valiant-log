@@ -18,7 +18,7 @@ export class CrewMemberPipe implements PipeTransform {
       return output;
     } else if (desiredCrewMember === "sophia") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].crewMember === "Sophia Forrester") {
+        if (input[i].crewMember === "First Officer Sophia Forrester") {
           output.push(input[i]);
         }
       }
