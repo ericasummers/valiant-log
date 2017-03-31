@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+#content {
+  margin-top: 130px;
+  background: url('/assets/spaceshipint.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-color: #633A3D;
+  color: white;
+  /*background: rgba(59, 34, 36, 0.7);*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  display: block;
+  height: 130px;
+}
+
+#ship-name {
+  font-size: 140%;
+  font-weight: bold;
+  color: #626493;
+}
