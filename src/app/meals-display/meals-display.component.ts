@@ -29,6 +29,16 @@ export class MealsDisplayComponent implements OnInit {
     this.filterByCrewMember = optionFromMenu;
   }
 
+  calorieColor(meal) {
+    if (meal.calories >= 500) {
+      return "highCalorie";
+    } else if (meal.calories < 20) {
+      return "lowCalorie";
+    } else {
+      return "standardCalorie";
+    }
+  }
+
   masterAnnouncementList: Announcement[] = [
     new Announcement('Temporary shortage due to hydroponics lab equipment down', 'Dried green beans', '2017-05-05'),
     new Announcement('Extra protein in pellets from latest batch', 'Pellets', '2020-08-09'),

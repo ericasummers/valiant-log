@@ -18,11 +18,26 @@ img {
   font-size: 140%;
 }
 
+.highCalorie {
+  font-weight: bold;
+  color: yellow;
+}
+
+.lowCalorie {
+  font-weight: bold;
+  color: red;
+}
+
 .meal-box {
   background: rgba(46, 47, 66, 0.6);
   border: solid 1px #575974;
   padding: 10px;
   margin: 12px;
+}
+
+.standardCalorie {
+  font-weight: bold;
+  color: green;
 }
 
 #add-box {

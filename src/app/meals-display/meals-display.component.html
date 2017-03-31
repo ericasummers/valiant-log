@@ -25,7 +25,7 @@ Crew Member:
   <p>{{meal.ration}}</p>
   <ul>
     <li>Details: {{meal.details}}</li>
-    <li>Calories: {{meal.calories}}</li>
+    <li>Calories: <span [class]="calorieColor(meal)">{{meal.calories}}</span></li>
     <li>On logged date: {{meal.date}}</li>
   </ul>
 </div>
