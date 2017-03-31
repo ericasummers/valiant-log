@@ -10,7 +10,14 @@ body {
 }
 img {
   max-height: 100px;
-  margin: 3px;
+  display: inline;
+  float: left;
+  margin-bottom: 1px;
+  margin-right: 2px;
+}
+
+option {
+  color: #1D1D1E;
 }
 
 .crew-name {
@@ -26,6 +33,7 @@ img {
   border: solid 1px #D5DAF2;
   color: #1D1D1E;
   font-family: 'Comfortaa', cursive;
+  font-size: 120%;
 }
 
 .highCalorie {
