@@ -6,6 +6,9 @@ import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
+import { MealsDisplayComponent } from './meals-display/meals-display.component';
+import { AboutComponent } from './about/about.component';
+import { routing } from './app.routing';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -16,14 +19,17 @@ export const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MealsDisplayComponent,
+    AboutComponent
   ],
   imports: [
     AlertModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
