@@ -18,4 +18,24 @@ export class MealService {
     this.meals.push(newMeal);
   }
 
+  getMealById(mealId: string) {
+    return this.angularFire.database.object('/meals/' + mealId);
+  }
+
+  updateMeal(thisMeal) {
+    var mealInFirebase = this.getMealById(thisMeal.$key);
+    mealInFirebase.update({
+      ration: thisMeal.ration,
+      details: thisMeal.details,
+      calories: thisMeal.calories,
+      crewMember: thisMeal.crewMember,
+      date: thisMeal.date
+    });
+  }
+
+  deleteMeal(thisMeal) {
+    var mealInFirebase = this.getMealById(thisMeal.$key);
+    mealInFirebase.remove();
+  }
+
 }

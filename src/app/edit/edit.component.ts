@@ -4,18 +4,20 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MealService } from '../meal.service';
 
 @Component({
-  selector: 'app-meals-display',
-  templateUrl: './meals-display.component.html',
-  styleUrls: ['./meals-display.component.css'],
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.css'],
   providers: [MealService]
 })
-export class MealsDisplayComponent implements OnInit {
+export class EditComponent implements OnInit {
 
   constructor(private mealService: MealService) { }
 
   ngOnInit() {
-    this.meals = this.mealService.getMeals();
   }
 
-  meals: FirebaseListObservable<any[]>;
+  submitMeal(newMeal) {
+    this.mealService.addMeal(newMeal);
+  }
+
 }
