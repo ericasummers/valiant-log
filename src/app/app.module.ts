@@ -10,6 +10,7 @@ import { MealsDisplayComponent } from './meals-display/meals-display.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
 import { AddMealComponent } from './meals-display/add-meal/add-meal.component';
+import { EditMealComponent } from './meals-display/edit-meal/edit-meal.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     MealsDisplayComponent,
     AboutComponent,
-    AddMealComponent
+    AddMealComponent,
+    EditMealComponent
   ],
   imports: [
     AlertModule.forRoot(),

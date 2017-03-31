@@ -5,6 +5,7 @@
 <div *ngFor="let meal of meals | async">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>
   <p>{{meal.ration}}</p>
+  <app-edit-meal></app-edit-meal>
   <ul>
     <li>Details: {{meal.details}}</li>
     <li>Calories: {{meal.calories}}</li>
