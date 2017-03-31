@@ -1,9 +1,11 @@
 <br>
+<h4>Filter by Caloric Value:
 <select (change)="onChange($event.target.value)">
   <option value="allMeals">All Rations</option>
   <option value="highCalorie">High Calorie Rations</option>
   <option value="lowCalorie">Low Calorie Rations</option>
 </select>
+</h4>
 
 <div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>

@@ -13,6 +13,7 @@ import { AddMealComponent } from './edit/add-meal/add-meal.component';
 import { EditComponent } from './edit/edit.component';
 import { EditMealComponent } from './edit/edit-meal/edit-meal.component';
 import { HighCaloriePipe } from './high-calorie.pipe';
+import { CrewMemberPipe } from './crew-member.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AddMealComponent,
     EditMealComponent,
     EditComponent,
-    HighCaloriePipe
+    HighCaloriePipe,
+    CrewMemberPipe
   ],
   imports: [
     AlertModule.forRoot(),
