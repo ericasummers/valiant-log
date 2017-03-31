@@ -9,6 +9,11 @@ body {
   height: 100%;
 }
 
+.crew-name {
+  font-weight: bold;
+  font-size: 140%;
+}
+
 .meal-box {
   background: rgba(46, 47, 66, 0.6);
   border: solid 1px #575974;
