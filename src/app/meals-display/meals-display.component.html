@@ -18,13 +18,12 @@ Crew Member:
   <option value="tatiana">Tatiana Wisla</option>
 </select>
 </h5>
-
-<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie | crewMember:filterByCrewMember" class="col-mg-5">
+<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie | crewMember:filterByCrewMember" class="meal-box">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>
   <p>{{meal.ration}}</p>
   <ul>
     <li>Details: {{meal.details}}</li>
     <li>Calories: {{meal.calories}}</li>
-    <li>Date: {{meal.date}}</li>
+    <li>On logged date: {{meal.date}}</li>
   </ul>
 </div>

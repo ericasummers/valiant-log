@@ -9,6 +9,20 @@ body {
   height: 100%;
 }
 
+.meal-box {
+  background: rgba(46, 47, 66, 0.6);
+  border: solid 1px #575974;
+  padding: 10px;
+  margin: 12px;
+}
+
+#add-box {
+  background: rgba(46, 46, 48, 0.5);
+  border: solid 1px #84858C;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+
 #all-content {
   min-height: 100%;
   position: relative;
@@ -18,19 +32,18 @@ body {
   margin-top: 130px;
   color: #A5A7CC;
   padding: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 #footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
   font-size: 60%;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   text-align: center;
   font-size: 14px;
   color: white;
-  height: 30px;
-  padding-top: 2px;
 }
 
 #header {
