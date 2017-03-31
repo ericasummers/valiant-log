@@ -1,34 +1,34 @@
 { "meals": [
   {
-    "crew-member": "Captain Alex Row",
+    "crewMember": "Captain Alex Row",
     "ration": "Greens, pellets, and coffee",
     "details": "Rehydrated vegetables from hydroponics, soy protein pellets, and instant coffee",
     "calories": "450",
     "date": "2022-10-03"
   },
   {
-    "crew-member": "Dio Eraclea",
+    "crewMember": "Dio Eraclea",
     "ration": "Sweet berries",
     "details": "Red berries rehydrated from storage",
     "calories": "80",
     "date": "2022-10-03"
   },
   {
-    "crew-member": "Claus Valca",
+    "crewMember": "Claus Valca",
     "ration": "Greens and browns",
     "details": "Rehydrated vegetables from hydroponics and freeze-dried mushrooms",
     "calories": "220",
     "date": "2022-10-03"
   },
   {
-    "crew-member": "Lucciola",
+    "crewMember": "Lucciola",
     "ration": "Protein shake",
     "details": "Protein powder mixture combined with dried milk and water",
     "calories": "45",
     "date": "2022-10-03"
   },
   {
-    "crew-member": "Tatiana Wisla",
+    "crewMember": "Tatiana Wisla",
     "ration": "Pellets, browns, and yellows",
     "details": "Soy protein pellets, freeze-dried mushrooms, and reconstituted potatoes",
     "calories": "340",
