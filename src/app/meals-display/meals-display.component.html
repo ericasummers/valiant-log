@@ -1,13 +1,25 @@
 <br>
-<h4>Filter by Caloric Value:
-<select (change)="onChange($event.target.value)">
+<h4>Filter by:</h4>
+<h5>Caloric Value:
+<select (change)="onCalorieChange($event.target.value)">
   <option value="allMeals">All Rations</option>
   <option value="highCalorie">High Calorie Rations</option>
   <option value="lowCalorie">Low Calorie Rations</option>
 </select>
-</h4>
+&nbsp;&nbsp;
+Crew Member:
+<select (change)="onCrewChange($event.target.value)">
+  <option value="allMeals">All Crew Members</option>
+  <option value="alex">Captain Alex Row</option>
+  <option value="sophia">Sophia Forrester</option>
+  <option value="dio">Dio Eraclea</option>
+  <option value="claus">Claus Valca</option>
+  <option value="lucciola">Lucciola</option>
+  <option value="tatiana">Tatiana Wisla</option>
+</select>
+</h5>
 
-<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie">
+<div *ngFor="let meal of meals | async | highCalorie:filterByHighCalorie | crewMember:filterByCrewMember">
   <h3><span class="crew-name">{{meal.crewMember}}</span> ate:</h3>
   <p>{{meal.ration}}</p>
   <ul>
