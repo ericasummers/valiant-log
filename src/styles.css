@@ -14,8 +14,10 @@ img {
 }
 
 .crew-name {
+  font-family: 'Righteous', cursive;
   font-weight: bold;
   font-size: 140%;
+  letter-spacing: 2px;
 }
 
 .descriptions {
@@ -23,6 +25,7 @@ img {
   background-color: rgba(166, 175, 218, 0.5);
   border: solid 1px #D5DAF2;
   color: #1D1D1E;
+  font-family: 'Comfortaa', cursive;
 }
 
 .highCalorie {
@@ -68,9 +71,11 @@ img {
 #all-content {
   min-height: 100%;
   position: relative;
+  font-family: 'Comfortaa', cursive;
 }
 
 #announcements {
+  font-family: 'Righteous', cursive;
   background: rgba(165, 165, 167, 0.5);
   border: solid 1px #D7D7D9;
   padding: 10px;
@@ -108,6 +113,7 @@ img {
 }
 
 #ship-name {
+  font-family: 'Righteous', cursive;
   font-size: 140%;
   font-weight: bold;
   color: #A5A7CC;
