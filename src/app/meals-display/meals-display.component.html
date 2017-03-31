@@ -1,6 +1,8 @@
 <br>
-<h4><strong>Announcements</strong>:</h4>
-<app-announcements-display [childAnnouncementList]="masterAnnouncementList"></app-announcements-display>
+<div id="announcements">
+  <h4><strong>Announcements</strong>:</h4>
+  <app-announcements-display [childAnnouncementList]="masterAnnouncementList"></app-announcements-display>
+</div>
 <h4>Filter by:</h4>
 <h5>Caloric Value:
 <select (change)="onCalorieChange($event.target.value)">
